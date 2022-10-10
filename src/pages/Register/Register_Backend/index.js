@@ -67,9 +67,9 @@ app.post("/signup", async(req, res)=> {
 
     const { name, email, password} = req.body
 
-    let user = await User.findOne({email: email})
+    let user = await User.findOne({email: email}) 
         if(user){
-            res.send({message: "User already registerd"})
+            res.send({messa:"User already registered",message: "User already registered"})
         } else {
             try{
                 const {valid, reason, validators} = await isEmailValid(email)

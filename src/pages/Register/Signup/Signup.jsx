@@ -50,14 +50,14 @@ const Signup = () => {
           setStrike(true);
           console.log(res.message);
 
-        }else if(res.data.message=="User already registerd"){
+        }else if(res.data.messa=="User already registered"){
           setTxt(res.data.message);
           setC('green');
           setStrike(true);
           console.log(res.message);
 
         }
-        else{
+        else if(res.data.message=="singupsuccessful"){
           navigate('/login')
         }
         

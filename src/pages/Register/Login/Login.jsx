@@ -31,7 +31,7 @@ const Login = () => {
   }
 
   const login = () => {
-    axios.post('https://git.heroku.com/tmetricclone.git/login', user)
+    axios.post('https://tmetricclone.herokuapp.com/login', user)
     .then((res) => { if(res.data.message === "Login Successfull") {
       alert(res.data.message);
       navigate('/dashboard/time');
