@@ -36,7 +36,7 @@ const Signup = () => {
     console.log("user de",name,email,password);
     if(name && email && password) {
       console.log(user,user);
-      axios.post('https://tmetricclone.herokuapp.com/signup',{
+      axios.post('https://funny-gold-firefly.cyclic.app/signup',{
         name:name,
         email:email,
         password:password

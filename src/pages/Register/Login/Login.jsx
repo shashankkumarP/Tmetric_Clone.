@@ -31,7 +31,7 @@ const Login = () => {
   }
 
   const login = () => {
-    axios.post('https://tmetricclone.herokuapp.com/login', user)
+    axios.post('https://funny-gold-firefly.cyclic.app/login', user)
     .then((res) => { if(res.data.message === "Login Successfull") {
       alert(res.data.message);
       navigate('/dashboard/time');
